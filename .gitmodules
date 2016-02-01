@@ -1,0 +1,3 @@
+[submodule "Pi-Expansion/library"]
+	path = Pi-Expansion/library
+	url = https://github.com/freetronics/freetronics_kicad_library.git
