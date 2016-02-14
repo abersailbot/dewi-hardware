@@ -1,4 +1,4 @@
-update=Sun 14 Feb 2016 05:12:40 GMT
+update=Sun 14 Feb 2016 07:04:14 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,6 +59,6 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=library/A2200-A/a2200-a
-LibName32=library/RPi_Hat_Template/RPi_Hat-cache
-LibName33=myriadrf/KiCad/Universal
+LibName31=myriadrf/KiCad/Universal
+LibName32=A2200-A/a2200-a
+LibName33=PI_HAT/RPi_Hat_Template/RPi_Hat-cache
