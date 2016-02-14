@@ -1,3 +1,9 @@
 [submodule "Pi-Expansion/library"]
 	path = Pi-Expansion/library
 	url = https://github.com/freetronics/freetronics_kicad_library.git
+[submodule "Pi-Expansion/A2200-A"]
+	path = Pi-Expansion/A2200-A
+	url = git@github.com:ElectricGears/Maestro-GPS-Receivers-Board.git
+[submodule "Pi-Expansion/myriadrf"]
+	path = Pi-Expansion/myriadrf
+	url = git@github.com:myriadrf/component-libraries.git
