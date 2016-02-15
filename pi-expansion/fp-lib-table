@@ -3,4 +3,5 @@
   (lib (name A2200-A)(type KiCad)(uri "$(KIPRJMOD)/A2200-A")(options "")(descr ""))
   (lib (name Universal)(type Legacy)(uri "$(KIPRJMOD)/myriadrf/KiCad/Universal.mod")(options "")(descr ""))
   (lib (name RPi_Hat)(type KiCad)(uri "$(KIPRJMOD)/PI_HAT/RPi_Hat.pretty")(options "")(descr ""))
+  (lib (name Sailbot_Custom)(type KiCad)(uri "$(KIPRJMOD)/Sailbot_Custom.pretty")(options "")(descr ""))
 )
