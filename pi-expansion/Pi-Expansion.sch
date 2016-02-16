@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:freetronics_schematic
+LIBS:Pi-Expansion-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,9 +29,10 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Universal
 LIBS:a2200-a
 LIBS:RPi_Hat-cache
+LIBS:freetronics_schematic
+LIBS:Universal
 LIBS:Pi-Expansion-cache
 EELAYER 25 0
 EELAYER END
@@ -87,7 +88,7 @@ F 9 "SMA_H" H 5100 2100 60  0000 C CNN "Component Value"
 	1    0    0    1   
 $EndComp
 $Comp
-L LED LED1
+L LED-RESCUE-Pi-Expansion LED1
 U 1 1 56C01A08
 P 9550 5000
 F 0 "LED1" H 9550 5100 50  0000 C CNN
@@ -98,7 +99,7 @@ F 3 "" H 9550 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED LED2
+L LED-RESCUE-Pi-Expansion LED2
 U 1 1 56C01AE2
 P 9550 5300
 F 0 "LED2" H 9550 5400 50  0000 C CNN
@@ -109,7 +110,7 @@ F 3 "" H 9550 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED LED3
+L LED-RESCUE-Pi-Expansion LED3
 U 1 1 56C01B0C
 P 9550 5600
 F 0 "LED3" H 9550 5700 50  0000 C CNN
@@ -120,7 +121,7 @@ F 3 "" H 9550 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED LED4
+L LED-RESCUE-Pi-Expansion LED4
 U 1 1 56C01B3D
 P 9550 5900
 F 0 "LED4" H 9550 6000 50  0000 C CNN
@@ -150,7 +151,7 @@ PI_LED_3
 Text GLabel 9100 5900 0    60   Input ~ 0
 PI_LED_4
 $Comp
-L R R2
+L R-RESCUE-Pi-Expansion R2
 U 1 1 56C02F7F
 P 10350 5450
 F 0 "R2" V 10430 5450 50  0000 C CNN
@@ -201,13 +202,13 @@ Text GLabel 3750 5600 2    55   Input ~ 0
 GPS_TX
 Text GLabel 3750 5500 2    55   Input ~ 0
 GPS_RX
-Text GLabel 1250 5500 0    55   Input ~ 0
+Text GLabel 3650 6700 2    55   Input ~ 0
 PI_LED_1
-Text GLabel 1250 5700 0    55   Input ~ 0
+Text GLabel 3650 6900 2    55   Input ~ 0
 PI_LED_2
-Text GLabel 1250 5800 0    55   Input ~ 0
+Text GLabel 3650 7000 2    55   Input ~ 0
 PI_LED_3
-Text GLabel 1250 5900 0    55   Input ~ 0
+Text GLabel 3650 7100 2    55   Input ~ 0
 PI_LED_4
 $Comp
 L GND #PWR05
@@ -220,10 +221,8 @@ F 3 "" H 2100 2700 50  0000 C CNN
 	1    2100 2700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2250 1500 0    60   Input ~ 0
-GPS_ON_OFF
 $Comp
-L R R1
+L R-RESCUE-Pi-Expansion R1
 U 1 1 56C04659
 P 5650 2600
 F 0 "R1" V 5730 2600 50  0000 C CNN
@@ -259,7 +258,7 @@ Wire Wire Line
 	9750 5600 10100 5600
 Connection ~ 10100 5600
 Wire Wire Line
-	1350 7250 1350 7100
+	1350 7100 1350 7250
 Wire Wire Line
 	1350 7100 1500 7100
 Wire Wire Line
@@ -281,17 +280,15 @@ Wire Wire Line
 Wire Wire Line
 	3400 5600 3750 5600
 Wire Wire Line
-	1250 5800 1500 5800
+	3650 7000 3400 7000
 Wire Wire Line
-	1250 5900 1500 5900
+	3650 7100 3400 7100
 Wire Wire Line
 	2250 2100 2400 2100
 Wire Wire Line
 	2400 2300 2250 2300
 Wire Wire Line
 	2100 2700 2400 2700
-Wire Wire Line
-	2250 1500 2400 1500
 Wire Wire Line
 	4250 1500 5650 1500
 Wire Wire Line
@@ -300,45 +297,12 @@ Wire Wire Line
 	4250 3300 5650 3300
 Wire Wire Line
 	5650 3300 5650 2850
-Text GLabel 2250 1700 0    60   Input ~ 0
-GPS_WAKEUP
-Wire Wire Line
-	2400 1700 2250 1700
-Text GLabel 2250 1900 0    60   Input ~ 0
-GPS_RESET
-Wire Wire Line
-	2400 1900 2250 1900
 Text Notes 4300 3450 0    60   ~ 0
 SPI PINS
-Text GLabel 3750 5700 2    55   Input ~ 0
-GPS_ON_OFF
 Wire Wire Line
-	3400 5700 3750 5700
-Text GLabel 3750 5900 2    55   Input ~ 0
-GPS_WAKEUP
+	3650 6900 3400 6900
 Wire Wire Line
-	3400 5900 3750 5900
-Text GLabel 3750 6000 2    55   Input ~ 0
-GPS_RESET
-Wire Wire Line
-	3400 6000 3750 6000
-Wire Wire Line
-	1250 5700 1500 5700
-Wire Wire Line
-	1250 5500 1500 5500
-$Comp
-L MOSFET_N Q1
-U 1 1 56C071B7
-P 9500 1150
-F 0 "Q1" V 9410 1320 60  0000 R CNN
-F 1 "IRLML6344TRPBF" V 9560 900 60  0000 R CNN
-F 2 "FT:SOT23_FET" H 9500 1150 60  0001 C CNN
-F 3 "" H 9500 1150 60  0000 C CNN
-	1    9500 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9300 1250 9250 1250
+	3650 6700 3400 6700
 $Comp
 L SPX2920U-5.0 U2
 U 1 1 56C0786C
@@ -351,31 +315,18 @@ F 3 "" H 10400 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 900  10000 900 
-Connection ~ 9500 900 
-Wire Wire Line
-	9700 1250 10950 1250
-Wire Wire Line
 	10400 1250 10400 1200
 $Comp
 L CONN_01X02 P1
 U 1 1 56C07B0C
-P 9000 700
-F 0 "P1" H 9000 850 50  0000 C CNN
-F 1 "BATT" V 9100 700 50  0000 C CNN
-F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM2-54mm_Lock_2pin_straight" H 9000 700 50  0001 C CNN
-F 3 "" H 9000 700 50  0000 C CNN
-	1    9000 700 
+P 8650 700
+F 0 "P1" H 8650 850 50  0000 C CNN
+F 1 "BATT" V 8750 700 50  0000 C CNN
+F 2 "Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM2-54mm_Lock_2pin_straight" H 8650 700 50  0001 C CNN
+F 3 "" H 8650 700 50  0000 C CNN
+	1    8650 700 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9250 1250 9250 1100
-Wire Wire Line
-	9250 1100 8950 1100
-Wire Wire Line
-	8950 1100 8950 900 
-Wire Wire Line
-	9500 950  9500 900 
 $Comp
 L +5V #PWR06
 U 1 1 56C07DE9
@@ -404,10 +355,6 @@ F 3 "" H 3650 5200 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3400 5200 3650 5200
-Wire Wire Line
-	3400 5300 3650 5300
-Wire Wire Line
-	3650 5300 3650 5200
 $Comp
 L +3.3V #PWR08
 U 1 1 56C085CB
@@ -437,4 +384,96 @@ $EndComp
 Connection ~ 10400 1250
 Wire Wire Line
 	4700 2100 4250 2100
+$Comp
+L FUSE F1
+U 1 1 56C2331F
+P 9100 900
+F 0 "F1" H 9200 950 50  0000 C CNN
+F 1 "FUSE" H 9000 850 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 9100 900 50  0001 C CNN
+F 3 "" H 9100 900 50  0000 C CNN
+	1    9100 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 900  10000 900 
+Wire Wire Line
+	8700 900  8850 900 
+Wire Wire Line
+	9250 1250 10950 1250
+Wire Wire Line
+	8600 1250 8950 1250
+Wire Wire Line
+	8600 1250 8600 900 
+$Comp
+L D D1
+U 1 1 56C23E17
+P 9100 1250
+F 0 "D1" H 9100 1350 50  0000 C CNN
+F 1 "D" H 9100 1150 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 9100 1250 50  0001 C CNN
+F 3 "" H 9100 1250 50  0000 C CNN
+	1    9100 1250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3400 6500
+NoConn ~ 3400 6400
+NoConn ~ 3400 6300
+NoConn ~ 3400 6200
+NoConn ~ 1500 6200
+NoConn ~ 1500 6300
+NoConn ~ 1500 6100
+NoConn ~ 1500 5400
+NoConn ~ 1500 5300
+NoConn ~ 1500 7000
+NoConn ~ 1500 6900
+NoConn ~ 1500 6800
+NoConn ~ 1500 6700
+NoConn ~ 1500 6600
+NoConn ~ 1500 6500
+NoConn ~ 4250 3500
+NoConn ~ 4250 3100
+NoConn ~ 4250 2700
+NoConn ~ 4250 2500
+NoConn ~ 2400 2500
+NoConn ~ 2400 2900
+NoConn ~ 2400 3100
+NoConn ~ 4250 1700
+NoConn ~ 1500 6400
+NoConn ~ 3400 6600
+NoConn ~ 1500 5600
+NoConn ~ 3400 6100
+NoConn ~ 3400 5800
+NoConn ~ 3400 5400
+NoConn ~ 3400 5300
+NoConn ~ 3400 6800
+NoConn ~ 2400 1900
+Text GLabel 3750 5700 2    60   Input ~ 0
+GPS_WAKE
+Wire Wire Line
+	3400 5700 3750 5700
+Text GLabel 2250 1500 0    60   Input ~ 0
+GPS_WAKE
+Wire Wire Line
+	2400 1500 2250 1500
+$Comp
+L GND #PWR010
+U 1 1 56C26D35
+P 2050 1800
+F 0 "#PWR010" H 2050 1550 50  0001 C CNN
+F 1 "GND" H 2050 1650 50  0000 C CNN
+F 2 "" H 2050 1800 50  0000 C CNN
+F 3 "" H 2050 1800 50  0000 C CNN
+	1    2050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1800 2050 1700
+Wire Wire Line
+	2050 1700 2400 1700
+NoConn ~ 1500 5900
+NoConn ~ 1500 5800
+NoConn ~ 1500 5700
+NoConn ~ 1500 5500
+NoConn ~ 1500 6000
 $EndSCHEMATC

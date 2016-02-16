@@ -1,4 +1,4 @@
-update=Sun 14 Feb 2016 07:04:14 GMT
+update=Mon 15 Feb 2016 20:37:43 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -29,7 +29,7 @@ version=1
 version=1
 LibDir=library
 [eeschema/libraries]
-LibName1=library/freetronics_schematic
+LibName1=Pi-Expansion-rescue
 LibName2=power
 LibName3=device
 LibName4=transistors
@@ -59,6 +59,7 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=myriadrf/KiCad/Universal
-LibName32=A2200-A/a2200-a
-LibName33=PI_HAT/RPi_Hat_Template/RPi_Hat-cache
+LibName31=A2200-A/a2200-a
+LibName32=PI_HAT/RPi_Hat_Template/RPi_Hat-cache
+LibName33=library/freetronics_schematic
+LibName34=myriadrf/KiCad/Universal
