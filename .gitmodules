@@ -1,15 +1,15 @@
 [submodule "pi-expansion/A2200-A"]
 	path = pi-expansion/A2200-A
-	url = git@github.com:ElectricGears/Maestro-GPS-Receivers-Board.git
+	url = https://github.com/ElectricGears/Maestro-GPS-Receivers-Board.git
 [submodule "pi-expansion/PI_HAT/RPi_Hat.pretty"]
 	path = pi-expansion/PI_HAT/RPi_Hat.pretty
-	url = git@github.com:xesscorp/RPi_Hat.pretty.git
+	url = https://github.com/xesscorp/RPi_Hat.pretty.git
 [submodule "pi-expansion/PI_HAT/RPi_Hat_Template"]
 	path = pi-expansion/PI_HAT/RPi_Hat_Template
-	url = git@github.com:xesscorp/RPi_Hat_Template.git
+	url = https://github.com/xesscorp/RPi_Hat_Template.git
 [submodule "pi-expansion/myriadrf"]
 	path = pi-expansion/myriadrf
-	url = git@github.com:myriadrf/component-libraries.git
+	url = https://github.com/myriadrf/component-libraries.git
 [submodule "pi-expansion/library"]
 	path = pi-expansion/library
-	url = git@github.com:freetronics/freetronics_kicad_library.git
+	url = https://github.com/freetronics/freetronics_kicad_library.git
