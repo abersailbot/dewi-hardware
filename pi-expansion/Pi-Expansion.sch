@@ -173,17 +173,6 @@ F 3 "" H 1350 7250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
-U 1 1 56C036F9
-P 2200 2250
-F 0 "#PWR03" H 2200 2000 50  0001 C CNN
-F 1 "GND" H 2200 2100 50  0000 C CNN
-F 2 "" H 2200 2250 50  0000 C CNN
-F 3 "" H 2200 2250 50  0000 C CNN
-	1    2200 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR04
 U 1 1 56C03A1A
 P 2600 1100
@@ -766,4 +755,8 @@ Text Notes 8850 700  0    60   ~ 0
 External Power
 Text Notes 8200 4000 0    60   ~ 0
 GPS status \n  indicator
+Text Notes 1600 5050 0    60   ~ 0
+Raspberry Pi B+\n       Header
+Text Notes 4200 2150 0    60   ~ 0
+Antenna
 $EndSCHEMATC

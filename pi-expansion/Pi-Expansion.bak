@@ -39,10 +39,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Captain H.Morgan"
+Date "2016-05-22"
+Rev "v1.2"
+Comp "Abersailbot"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -293,8 +293,8 @@ $Comp
 L SPX2920U-5.0 U2
 U 1 1 56C0786C
 P 9250 1150
-F 0 "U2" H 9250 1400 50  0000 C CNN
-F 1 "SPX2920U-5.0" H 9250 1350 50  0000 C CNN
+F 0 "U2" H 9250 1450 50  0000 C CNN
+F 1 "Racom R-78B5.0-1.5L" H 9250 1350 50  0000 C CNN
 F 2 "Converters_DCDC_ACDC:DCDC-Conv_Recom_R-78HBxx-0.5" H 9250 1250 50  0001 C CIN
 F 3 "" H 9250 1150 50  0000 C CNN
 	1    9250 1150
@@ -756,4 +756,14 @@ Wire Wire Line
 	8400 4100 8500 4100
 Text GLabel 8400 4100 0    55   Input ~ 0
 GPS_TX
+Text Notes 1450 1400 0    60   ~ 0
+Mode selection \njumper
+Text Notes 2750 1500 0    60   ~ 0
+GPS A2200-A
+Text Notes 600  4900 0    60   ~ 0
+I2C Breakout
+Text Notes 8850 700  0    60   ~ 0
+External Power
+Text Notes 8200 4000 0    60   ~ 0
+GPS status \n  indicator
 $EndSCHEMATC
