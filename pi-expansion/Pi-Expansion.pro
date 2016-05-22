@@ -1,4 +1,4 @@
-update=Tue 17 May 2016 00:01:57 BST
+update=Sun 22 May 2016 03:12:13 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName33=library/freetronics_schematic
 LibName34=myriadrf/KiCad/Universal
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=Refrence/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
