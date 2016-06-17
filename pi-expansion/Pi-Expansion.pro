@@ -1,4 +1,4 @@
-update=Sun 22 May 2016 03:12:13 BST
+update=Fri 17 Jun 2016 13:12:27 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,18 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=Refrence/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=library
@@ -61,15 +73,3 @@ LibName31=A2200-A/a2200-a
 LibName32=PI_HAT/RPi_Hat_Template/RPi_Hat-cache
 LibName33=library/freetronics_schematic
 LibName34=myriadrf/KiCad/Universal
-[general]
-version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=Refrence/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
