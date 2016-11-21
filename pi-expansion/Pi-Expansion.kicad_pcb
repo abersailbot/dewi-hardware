@@ -3121,7 +3121,7 @@
     (arrow2a (pts (xy 129.75 72.25) (xy 129.163579 73.376504)))
     (arrow2b (pts (xy 129.75 72.25) (xy 130.336421 73.376504)))
   )
-  (gr_text GPSD (at 85 129 45) (layer F.SilkS)
+  (gr_text gpsd (at 84.5 129 45) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text behaviour (at 82 128 45) (layer F.SilkS)
