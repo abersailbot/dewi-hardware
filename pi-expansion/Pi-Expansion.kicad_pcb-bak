@@ -14,7 +14,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (31 B.Cu power hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -3091,7 +3091,7 @@
       (net 1 +3V3))
   )
 
-  (gr_text abersailbot.github.io (at 118.75 95 90) (layer F.Cu)
+  (gr_text abersailbot.co.uk (at 119 97 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text 2.2K (at 77.5 121.5) (layer F.SilkS)
